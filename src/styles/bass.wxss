@@ -1,0 +1,53 @@
+page {
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  font-size: 28rpx;
+  color: #333333;
+  font-family: Helvetica Neue, Helvetica, sans-serif;
+}
+/*浮动布局*/
+
+.me-fot-parent:after {
+  /*加在浮动元素的父元素上 解决因所有子元素浮动后父元素的高度问题*/
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.me-fot-lt {
+  /*左浮动*/
+  float: left;
+}
+
+.me-fot-rt {
+  /*右浮动*/
+  float: right;
+}
+
+/*其他常用样式*/
+.me-text-beyond {
+  /*文本内容超宽度省略号显示 单行*/
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 100%;
+}
+
+.me-text-beyond-multi {
+  /*文本内容超宽度省略号显示 多行*/
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.me-text-beyond-multi1 {
+  /*文本内容超宽度省略号显示 多行*/
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
