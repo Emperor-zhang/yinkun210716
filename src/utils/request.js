@@ -50,7 +50,11 @@ axios.defaults.adapter = function(config) {
         var buildURL = require("axios/lib/helpers/buildURL");
         uni.request({
             method: config.method.toUpperCase(),
-            url: buildURL(config.url, config.params, config.paramsSerializer),
+            url: buildURL(
+                config.baseURL + config.url,
+                config.params,
+                config.paramsSerializer
+            ),
             header: config.headers,
             data: config.data,
             dataType: config.dataType,

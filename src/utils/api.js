@@ -4,18 +4,7 @@ import {
     PromiseBagPut,
     PromiseBagDelete,
 } from "./promise.js";
-// export function getResquest(url, params) {
-//     return instance.get(url, {
-//         params,
-//     });
-// }
-// export function postResquest(url, data) {
-//     return instance.post(url, data);
-// }
-// 调用方法
-//  getResquest("categories", {}).then((res) => {
-//    console.log(res);
-//  });
+
 // ------------------------------------------------------------------------------------
 /**
  *
@@ -23,6 +12,12 @@ import {
  * } parmas
  * @returns
  */
+// 获取openID
+// export function GetOpenID(url, params) {
+//     return PromiseBagGet(url, {
+//         params,
+//     });
+// }
 // 获取表格列表
 // 4000000003082241
 export function TableList(parmas) {
